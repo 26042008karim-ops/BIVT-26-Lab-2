@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.InteropServices;
 
@@ -12,7 +13,10 @@ namespace Lab2
             double answer = 0;
 
             // code here
-
+            for (int i = 1; i <= n; i++)
+            {
+                answer += Math.Sin(i * x)/i;
+            }
             // end
 
             return answer;
